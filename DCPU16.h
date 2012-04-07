@@ -6,6 +6,8 @@
 
 namespace llvm {
   class DCPU16TargetMachine;
+
+  extern Target TheDCPU16Target;
 }
 
 #endif
