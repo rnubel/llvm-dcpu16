@@ -8,3 +8,6 @@ Target llvm::TheDCPU16Target;
 extern "C" void LLVMInitializeDCPU16TargetInfo() { 
   RegisterTarget<Triple::UnknownArch> X(TheDCPU16Target, "dcpu16", "DCPU16");
 }
+
+
+extern "C" void LLVMInitializeDCPU16TargetMC() {  }
