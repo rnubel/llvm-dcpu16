@@ -13,6 +13,14 @@ public:
                    StringRef CPU, StringRef FS,
                    Reloc::Model RM, CodeModel::Model CM);
   virtual const TargetData *getTargetData() const { return 0; }
+
+  virtual bool addPassesToEmitFile(PassManagerBase &PM,
+                                   formatted_raw_ostream &Out,
+                                   CodeGenFileType FileType,
+                                   CodeGenOpt::Level OptLevel,
+                                   bool DisableVerify);
+
+
 };
 
 }

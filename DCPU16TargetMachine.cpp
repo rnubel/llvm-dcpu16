@@ -16,3 +16,12 @@ DCPU16TargetMachine::DCPU16TargetMachine(const Target &T, StringRef TT,
   : LLVMTargetMachine(T, TT, CPU, FS, RM, CM) {
 }
 
+bool DCPU16TargetMachine::addPassesToEmitFile(PassManagerBase &PM,
+                                 formatted_raw_ostream &Out,
+                                 CodeGenFileType FileType,
+                                 CodeGenOpt::Level OptLevel,
+                                 bool DisableVerify) {
+  return false;
+}
+
+
